@@ -22,8 +22,14 @@
   </ul>
   
   <script>
-     // write your code here 
-     // ......
+    window.onload = function(){
+    var obj_lis = document.getElementById("no").getElementsByTagName("li");
+    for(i=0;i<obj_lis.length;i++){
+        obj_lis[i].onclick = function(){
+            alert(this.innerHTML);
+        }
+    }
+}
   </script>
   </body>
   </html>
